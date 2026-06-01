@@ -1,64 +1,27 @@
 ---
-language: en
-library_name: pytorch
-license: mit
-tags:
-- deepfake-detection
-- image-classification
-- video-analysis
-- efficientvit
-- pytorch
-pipeline_tag: image-classification
-
-safetensors:
-  total: 1
-  format: safetensors
-  weight_dtype: float32
-  size_in_bytes: 80000000   
-
-model-index:
-- name: Deepfake Detection with Improved EfficientViT
-  results:
-  - task:
-      type: image-classification
-      name: Deepfake Detection
-    dataset:
-      type: custom
-      name: FaceForensics++,Celeb-DF
-    metrics:
-      - name: Accuracy
-        type: accuracy
-        value: 0.8864
-      - name: Precision
-        type: precision
-        value: 0.8920
-      - name: Recall
-        type: recall
-        value: 0.8792
-      - name: F1-score
-        type: f1
-        value: 0.8856
-
-  config: config.json
-  metadata:
-    model_type: EfficientViT
-    num_parameters: 20026725
-    precision: float32
-    framework: pytorch
-    license: mit
-    model_format: safetensors
-    size: 82MB
----
 
 # Deepfake Detection with Improved EfficientViT
 
+# Deepfake Detection - EfficientViT
+
+[![Hugging Face Model](https://img.shields.io/badge/🤗_Hugging_Face-Model-blue)](https://huggingface.co/faisalishfaq2005/deepfake-detection-efficientnet-vit)
+
+Official GitHub repository for the model hosted on Hugging Face.
+
+## Model Link
+→ **[faisalishfaq2005/deepfake-detection-efficientnet-vit](https://huggingface.co/faisalishfaq2005/deepfake-detection-efficientnet-vit)**
+
+
+
 ## Model Architecture
 
-![Model Architecture](assets/architecture.png)
+<img width="1007" height="579" alt="deepfake_architecture_diagram_edited drawio (1)" src="https://github.com/user-attachments/assets/8a96c427-b39b-47d5-b824-705ea1b93e61" />
 
 ## Inference Pipeline
 
-![Inference Pipeline](assets/inference_pipeline.png)
+<img width="750" height="434" alt="inferencepipeline drawio" src="https://github.com/user-attachments/assets/509fb69d-5cc5-43e5-8ded-d6aafc6eceb2" />
+
+
 
 
 This repository contains a **PyTorch model for deepfake detection** based on an improved **EfficientViT** architecture, trained on video data.  
