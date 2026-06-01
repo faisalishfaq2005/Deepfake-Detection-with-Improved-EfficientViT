@@ -2,7 +2,6 @@
 
 # Deepfake Detection with Improved EfficientViT
 
-# Deepfake Detection - EfficientViT
 
 [![Hugging Face Model](https://img.shields.io/badge/🤗_Hugging_Face-Model-blue)](https://huggingface.co/faisalishfaq2005/deepfake-detection-efficientnet-vit)
 
@@ -48,6 +47,7 @@ fitting.
 
 <img width="1007" height="579" alt="deepfake_architecture_diagram_edited drawio (1)" src="https://github.com/user-attachments/assets/8a96c427-b39b-47d5-b824-705ea1b93e61" />
 
+# Methodology
 
 Deep learning models have shown remarkable performance
 in the field of image analysis and classification. CNNs have
@@ -104,7 +104,7 @@ combination of EfficientNet for spatial encoding and ViT for
 relational modeling leads to a robust architecture capable of
 capturing both local and global patterns.
 
-The loss function used for training is Binary Cross En-
+The loss function used for training is Binary Cross En
 tropy with Logits (BCEWithLogitsLoss), which is well-
 suited for binary classification tasks as it combines a sigmoid
 layer with binary cross-entropy loss. The optimizer chosen
@@ -239,7 +239,7 @@ If you use this model in your research, please cite:
   year={2025}
 }
 ```
-<img width="1198" height="434" alt="Screenshot 2026-06-01 191550" src="https://github.com/user-attachments/assets/54232add-c38d-4ed7-9f4d-484d4cca1aab" />
+
 
 
 
